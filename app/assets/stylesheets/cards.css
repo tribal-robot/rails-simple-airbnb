@@ -1,0 +1,9 @@
+.card {
+  height: 180px;
+}
+
+.card-icons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
