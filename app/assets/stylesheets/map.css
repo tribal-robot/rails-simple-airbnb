@@ -1,0 +1,6 @@
+.map {
+  height: 350px;
+  background-image: url('https://loremflickr.com/960/720/map');
+  background-position: center;
+  background-size: cover;
+}

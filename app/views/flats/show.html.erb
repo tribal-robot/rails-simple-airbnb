@@ -1,1 +1,56 @@
-<h1><%= @flat.name %></h1>
+<div class="header-image"></div>
+
+<div class="container margin-top-negative">
+  <div class="row">
+    <div class="col-8">
+      <div class="card card-show mb-4">
+        <div class="card-body">
+          <h1 class="card-title card-show-title"><%= @flat.name %></h1>
+          <p class="card-text card-show-text"><%= @flat.address %></p>
+        </div>
+      </div>
+      <div class="card card-show card-show-details mb-4">
+        <div class="card-body">
+          <h3>A bit more about this flat...</h3>
+          <p class="card-title"><%= @flat.description %></p>
+          <div class="map"></div>
+        </div>
+      </div>
+    </div>
+    <div class="col-4">
+      <div class="card card-show mb-4">
+        <div class="card-body">
+          <h4 class="card-title">Book this place!</h4>
+          <form action="">
+            <div class="input-group">
+              <span class="input-group-text">From:</span>
+              <input type="text" class="form-control" placeholder="14/08/20123" aria-label="start-date" aria-describedby="start-date-label">
+            </div>
+            <div class="input-group mt-2">
+              <span class="input-group-text">To:</span>
+              <input type="text" class="form-control" placeholder="20/08/2023" aria-label="end-date" aria-describedby="start-date-label">
+            </div>
+            <input type="submit" value="Book" class="btn btn-success mt-2" style="width: 100%">
+          </form>
+        </div>
+      </div>
+      <div class="card card-show mb-4">
+        <div class="card-body">
+          <h4 class="card-title">Details</h4>
+          <p class="card-text"><%= @flat.number_of_guests %> people &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp £<%= @flat.price_per_night %></p>
+        </div>
+      </div>
+      <div class="card card-show mb-4">
+        <div class="flex-align">
+          <h4 class="no-mb">Share</h4>
+          <div class="flex">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-reddit"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

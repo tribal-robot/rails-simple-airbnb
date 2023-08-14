@@ -1,9 +1,44 @@
 .card {
-  height: 180px;
+  border-radius: 2px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.card-body {
+  padding: 0;
 }
 
 .card-icons {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding-top: 10px;
+}
+
+.card-details {
+  height: 150px;
+  background-color: rgb(245, 245, 245);
+  padding: 16px 20px;
+}
+
+.card-title {
+  height: 50px;
+}
+
+.card-text {
+  height: 20px;
+  overflow: hidden;
+}
+
+.card-actions {
+  padding: 16px 20px 0px;
+}
+
+.card-show {
+  padding: 20px 24px;
+  height: fit-content;
+  background-color: rgb(245, 245, 245);
+}
+
+.card-show-title {
+  height: fit-content;
 }

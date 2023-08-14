@@ -1,0 +1,9 @@
+.margin-top-negative {
+  margin-top: -75px;
+}
+
+.flex-align {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}

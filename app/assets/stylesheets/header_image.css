@@ -1,0 +1,6 @@
+.header-image {
+  height: 350px;
+  background-image: url('https://loremflickr.com/960/720/apartment,building/all');
+  background-position: center;
+  background-size: cover;
+}
