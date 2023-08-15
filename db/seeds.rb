@@ -29,7 +29,8 @@
         SW57 8UR'].sample,
       description: Faker::Quote.mitch_hedberg,
       price_per_night: rand(50..150),
-      number_of_guests: rand(2..8)
+      number_of_guests: rand(2..8),
+      picture_url: 'https://loremflickr.com/960/720/apartment,building/all'
     }
   )
 end
