@@ -16,6 +16,8 @@
             </div>
             <div class="card-actions">
               <p><%= link_to "More info", flat_path(flat) %></p>
+              <p><%= link_to "Edit", edit_flat_path(flat), style: "color: orange" %></p>
+              <p><%= link_to "Remove", flat_path(flat), data: {turbo_method: :delete, turbo_confirm: "Are you sure?"}, style: "color: red" %></p>
             </div>
           </div>
         </div>
