@@ -1,6 +1,15 @@
 class FlatsController < ApplicationController
   before_action :set_flat, only: %i[show edit update destroy]
 
+  def search
+    if params[:search].blank?
+      redirect_to flats_path
+    else
+      @query = params[:search].downcase
+      @flats = Flat.where('lower(name) LIKE :search', search: "%#{@query}%")
+    end
+  end
+
   def index
     @flats = Flat.all
   end

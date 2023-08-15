@@ -1,0 +1,27 @@
+<div class="container">
+  <h1 class="mt-4 mb-4">Found (<%= @flats.size %>) flats</h1>
+  <div class="row">
+    <% @flats.each do |flat| %>
+      <div class="col-sm-4">
+        <div class="card mb-4">
+          <img src=<%= flat.picture_url %> class="card-img-top" style="height: 180px" alt="">
+          <div class="card-body">
+            <div class="card-details">
+              <h5 class="card-title"><%= flat.name %></h5>
+              <p class="card-text"><%= flat.address %></p>
+              <div class="card-icons">
+                <i class="fa-solid fa-user-group"> <%= flat.number_of_guests %></i>
+                <i class="fa-solid fa-sterling-sign"> <%= flat.price_per_night %></i>
+              </div>
+            </div>
+            <div class="card-actions">
+              <p><%= link_to "More info", flat_path(flat) %></p>
+              <p><%= link_to "Edit", edit_flat_path(flat), style: "color: orange" %></p>
+              <p><%= link_to "Remove", flat_path(flat), data: {turbo_method: :delete, turbo_confirm: "Are you sure?"}, style: "color: red" %></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</div>
